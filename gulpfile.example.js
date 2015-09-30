@@ -14,10 +14,12 @@ require('asset-pipeline')({
 
   browserify: {
     src: '/javascripts/app.js',
-    transform: [
-      'debowerify',
-      'babelify'
-    ]
+    options: {
+      transform: [
+        'debowerify',
+        'babelify'
+      ]
+    }
   }
 
 });

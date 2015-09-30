@@ -11,7 +11,7 @@ var revReplace = require('gulp-rev-replace');
 gulp.task('manifest', function () {
   var path = utils.destPath(config.manifest.dest).split('/');
   var file = path.pop();
-  var dest = path.join('/')
+  var dest = path.join('/');
   var src  = [
     utils.destPath(config.manifest.src),
     '!' + utils.destPath(file),
