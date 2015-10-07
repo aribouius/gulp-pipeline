@@ -75,8 +75,8 @@ module.exports = {
     options: {
       debug: true,
       transform: [
-        'debowerify',
-        ['babelify', { compact: true }]
+        'babelify',
+        'debowerify'
       ]
     }
   },

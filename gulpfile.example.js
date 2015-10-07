@@ -16,8 +16,8 @@ require('asset-pipeline')({
     src: '/javascripts/app.js',
     options: {
       transform: [
-        'debowerify',
-        'babelify'
+        'babelify',
+        'debowerify'
       ]
     }
   }
