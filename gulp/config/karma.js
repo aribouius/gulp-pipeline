@@ -1,17 +1,17 @@
 module.exports = function (karma) {
 
   var utils = require('../utils');
-  var merge = require('lodash').merge;
+  var assign = require('lodash').assign;
   var config = require('./');
   var basePath = process.cwd();
 
   var preProcessors = {};
   preProcessors[config.test.src] = ['browserify'];
 
-  var bConfig = merge({}, config.browserify.options);
+  var bConfig = assign({}, config.browserify.options);
   bConfig.transform = utils.transformConfig(bConfig.transform || []);
 
-  karma.set(merge({
+  karma.set(assign({
     basePath: basePath,
     files: [
       config.test.src
