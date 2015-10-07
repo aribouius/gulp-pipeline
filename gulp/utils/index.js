@@ -2,8 +2,19 @@
 
 var config = require('../config');
 var notify = require('./notify');
+var merge  = require('lodash').merge;
 
 module.exports = {
+
+  merge: function () {
+    var args = Array.prototype.slice.call(arguments);
+    if (args.length && typeof args[args.length-1] !== 'object') {
+      args.push(function (a, b) {
+        return b;
+      });
+    }
+    return merge.apply(merge, args);
+  },
 
   srcPath: function (file) {
     return this.buildPath(config.sourceDir, file);
