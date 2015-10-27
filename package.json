@@ -1,5 +1,5 @@
 {
-  "name": "asset-pipeline",
+  "name": "gulp-pipeline",
   "version": "0.0.1",
   "description": "",
   "main": "gulp/index.js",
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/abouius/asset-pipeline.git"
+    "url": "https://github.com/abouius/gulp-pipeline.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/abouius/asset-pipeline/issues"
+    "url": "https://github.com/abouius/gulp-pipeline/issues"
   },
-  "homepage": "https://github.com/abouius/asset-pipeline",
+  "homepage": "https://github.com/abouius/gulp-pipeline",
   "dependencies": {
     "babelify": "^6.1.3",
     "browserify": "^10.2.6",
